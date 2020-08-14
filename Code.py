@@ -50,13 +50,13 @@ plt.xlabel('Year')
 plt.ylabel('Population (in million)')
 plt.show()
 
-"""# Enter the year for prediction"""
+"""## Enter the year for prediction"""
 
 n = int(input())
 np.set_printoptions(precision=2)
 print(regressor.predict([[n]]),"million")
 
-"""# Accuracy"""
+"""## Accuracy"""
 
 from sklearn.metrics import r2_score
 print("Accuracy: {:.2f}%".format(r2_score(y_test, y_pred)*100))
